@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React</title>
+    <link rel="stylesheet" href="../css/billing.css">
+  </head>
+  <body>
+
+    <h2>React</h2>
+
+    <p>This page demonstrates using React without build tooling.</p>
+    <p>React is loaded as a script tag.</p>
+
+    <!-- We will put our React component inside this div. -->
+    <!--<div id="like_button_container"></div>-->
+
+    <!-- We will put our React component inside this div. -->
+    <div id="bill_header_container"></div>
+
+    <div class="bill-properties">
+      <div class="row">
+          <span id="average_balance_container"></span>
+        </div>
+  </div>
+
+  <div id="bill_button_container"></div>
+
+    <!-- <script src="scripts/r.js"></script> -->
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> -->
+    <!-- <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
+    <script src="../react.production.min.js"></script>
+    <script src="../react-dom.production.min.js"></script>
+
+    <script type="text/javascript" src="../jquery-3.3.1.min.js"></script>
+
+    <!-- ES5 compatible -->
+    <!--<script type="text/javascript" src="build/js/app.min.js"></script>-->
+
+    <!-- ES6 -->
+    <!-- Load our React component. -->
+    <script src="../src/average_balance.js"></script>
+    <script src="../src/bill_amount_2.js"></script>
+    <script src="../src/billing.js"></script>
+
+  </body>
+</html>
