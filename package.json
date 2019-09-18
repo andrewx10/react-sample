@@ -1,0 +1,33 @@
+{
+  "name": "billing",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rm -r lib; babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:watch": "watch \"npm run build && gulp\" src"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "browser-sync": "^2.24.7",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^0.2.9",
+    "gulp-less": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "require": "^2.4.20",
+    "watch": "^1.0.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": ""
+}
