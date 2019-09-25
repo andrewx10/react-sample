@@ -1,5 +1,7 @@
 'use strict';
 
+//import { React } from 'react'
+
 class FeesPaid extends React.Component {
     constructor(props) {
         super(props);

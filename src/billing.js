@@ -1,5 +1,8 @@
 'use strict';
 
+//import { React } from 'react'
+import { Provider } from 'react-redux'
+
 //Context lets us pass a value deep into the component tree
 //without explicitly threading it through every component.
 //Create a context for the current theme (with "light" as the default).
@@ -48,10 +51,16 @@ class BillingWidget extends React.Component {
 //            { onClick: () => this.setState({ billed: true }) },
 //            'Bill'
 //        );
-          return (<ThemeContext.Provider value="dark">
+
+      //    <Provider store={store}>
+//    
+//  </Provider>,
+          return (
+            <ThemeContext.Provider value="dark">
               <button onClick={()=>this.setState({billed:true})}>Bill</button>
               <Toolbar/>
-            </ThemeContext.Provider>);
+            </ThemeContext.Provider>
+            );
     }
 }
 

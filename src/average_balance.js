@@ -1,3 +1,6 @@
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
 'use strict';
 
 class BillingAmount extends React.Component {

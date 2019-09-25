@@ -32,17 +32,18 @@ gulp.task('css', function(){
 gulp.task('js', function(done){
     // 'client/javascript/*.js'
     console.log('js task');
+//  'lib/*.js'
     return gulp.src(
-        'lib/*.js'
+        'src/*.js'
     )
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(concat(
             'app.min.js'
         ))
-        .pipe(uglify())
-        .pipe(sourcemaps.write())
+        //.pipe(uglify())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest(
-            'build/js'
+            'build/js/src'
         ));
 
         // done();
