@@ -1,9 +1,14 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'development',
+
 //  entry: './build/js/app.min.js',
 //  entry: './src/billing.js',
-  entry: './build/js/src/app.min.js',
+  entry: './src/average_balance.js',
+// does not work:
+//    entry: './src',
+//  entry: './build/js/src/app.min.js',
 //  module: {
 //    loaders: [
 //      {

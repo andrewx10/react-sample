@@ -1,7 +1,19 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+
 'use strict';
 
-//import { React } from 'react'
-import { Provider } from 'react-redux'
+export function UserAndId(props) {
+  //const user = props.user;
+  console.log('UserAndId');
+  return (<div id="hello">Hello {props.user}, id {props.userId}</div>);
+  // return <div id="hello">h</div>
+}
+
+export default function hello() {
+  console.log('hello');
+}
 
 //Context lets us pass a value deep into the component tree
 //without explicitly threading it through every component.
@@ -19,7 +31,7 @@ class ThemedButton extends React.Component {
 }
 
 function Button(props) {
-  console.log('theme:' + props.theme);
+  console.log('theme : ' + props.theme);
   return <button id="myButton" className={props.theme}>More options</button>
 }
 
@@ -66,12 +78,6 @@ class BillingWidget extends React.Component {
 
 const billingDomContainer = document.querySelector('#bill_button_container');
 ReactDOM.render(React.createElement(BillingWidget), billingDomContainer);
-
-function UserAndId(props) {
-  const user = props.user;
-  console.log('header');
-  return <div id="hello">Hello {user}, id {props.userId}</div>;
-}
 
 function Intro(props) {
   const userAndId = (

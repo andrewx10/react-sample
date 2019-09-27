@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import hello from './billing'
+import { UserAndId } from './billing'
 
 'use strict';
 
@@ -40,11 +43,17 @@ class BillingAmount extends React.Component {
         return React.createElement(
             'ul',
             { 
-                class: "flex-container",
+                className: "flex-container",
                 dangerouslySetInnerHTML: {__html: this.state.billFieldLoadingMessage } 
             }
         );
     }
 }
-ReactDOM.render(React.createElement(BillingAmount),
+//ReactDOM.render(React.createElement(BillingAmount),
+//    document.querySelector('#average_balance_container'));
+ReactDOM.render(<BillingAmount/>,
     document.querySelector('#average_balance_container'));
+//hello();
+//UserAndId();
+ReactDOM.render(<UserAndId user="Joan" userId="134" />, document.getElementById('intro'));
+  
