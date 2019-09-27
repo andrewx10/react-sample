@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import hello from './billing'
-import { UserAndId } from './billing'
+import UserAndId from './billing'
 
 'use strict';
 
@@ -53,7 +52,5 @@ class BillingAmount extends React.Component {
 //    document.querySelector('#average_balance_container'));
 ReactDOM.render(<BillingAmount/>,
     document.querySelector('#average_balance_container'));
-//hello();
-//UserAndId();
 ReactDOM.render(<UserAndId user="Joan" userId="134" />, document.getElementById('intro'));
   
